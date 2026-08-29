@@ -1,7 +1,8 @@
 name: Pre-commit
 
-on: [push, pull_request]
-
+on:
+  push:
+    branches: [main]
 jobs:
   run:
     runs-on: ${{ matrix.os }}
